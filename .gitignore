@@ -1,0 +1,19 @@
+# Node modules (huge folders)
+node_modules/
+
+# Environment variables (NEVER push private keys!)
+.env
+**/.env
+
+# Uploaded user files
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Blockchain build files
+blockchain/artifacts/
+blockchain/cache/
+
+# React build
+frontend/build/
+
+# Demo files (Optional: If you want the professor to test it, leave this out. If you want them on GitHub, leave it out. If you want to hide them, add `demo-files/`)

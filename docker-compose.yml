@@ -1,0 +1,12 @@
+services:
+  mongodb:
+    image: mongo:7
+    container_name: provenance-mongodb
+    restart: unless-stopped
+    ports:
+      - "27022:27017"
+    volumes:
+      - provenance-mongo-data:/data/db
+
+volumes:
+  provenance-mongo-data:
